@@ -19,12 +19,21 @@ body {
 /* ---------------%اجعل الشريط الجانبي بطول 100------------- */
 .side-bar {
   /* flex */
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
 }
 
 /* ------------------(العنوان: المطلوب #2)------------------ */
 /* ------------------%اجعل العنوان بعرض 100----------------- */
 .header {
   /* flex */
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 12px;
 }
 /* ------------------(العنوان: المطلوب #2)------------------ */
 /* --اجعل العناصر (المنيو، معرفة المزيد، تواصل) تظهر بالنص-- */
@@ -34,6 +43,10 @@ body {
   color: white;
   padding-bottom: 10px;
   /* flex */
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+
 }
 .head-a {
   font-size: 20px;
@@ -47,6 +60,11 @@ body {
   display: inline;
   padding: 15px;
 }
+.head-ul {
+  display: flex;
+  justify-content: center;
+}
+
 
 /* ------------------(المحتوى: المطلوب #2)------------------ */
 /* ------------اجعل جميع عناصر المنيو تظهر بالنص------------ */
@@ -54,7 +72,6 @@ body {
 /* -------اجعل المسافة بين العناصر متساوية نفس الصورة------- */
 
 .menu {
-  display: block;
   background-color: rgb(255, 255, 255);
   padding: 25px;
   height: 600px;
@@ -62,6 +79,13 @@ body {
   margin-top: 50px;
   border-radius: 20px;
   /* flex */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 .imgs {
   display: flex;
@@ -102,4 +126,7 @@ p {
 .side-li {
   padding: 10px;
   list-style-type: none;
+}
+body{
+  font-family: Kufam;
 }
